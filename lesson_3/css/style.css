@@ -40,3 +40,23 @@ h2.introduction__title{
   color: #483D8B;
 }
 
+ul.menu * {
+  color: rgb(206, 99, 99);
+}
+
+[class*="some"] {
+  color: blue;
+}
+
+#mozart-effect {
+  color: blueviolet;
+}
+
+.first,
+.second,
+.third {
+  color: rgb(42, 165, 112);
+}
+
+
+
