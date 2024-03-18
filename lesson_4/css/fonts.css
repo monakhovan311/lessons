@@ -57,7 +57,7 @@
 
 /* Furniture */
 @font-face {
-    font-family: 'Proxima Nova Rg';
+    font-family: 'Proxima Nova';
     src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
         url('../fonts/ProximaNova-Regular.woff') format('woff');
     font-weight: 400;
@@ -66,7 +66,7 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Lt';
+    font-family: 'Proxima Nova';
     src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
         url('../fonts/ProximaNova-Semibold.woff') format('woff');
     font-weight: 600;
