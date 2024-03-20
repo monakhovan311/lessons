@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: 'Tektur Condensed';
+  font-family: 'Tektur';
   src: url('../fonts/TekturCondensed-Bold.woff2') format('woff2'),
       url('../fonts/TekturCondensed-Bold.woff') format('woff');
   font-weight: 700;
