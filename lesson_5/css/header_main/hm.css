@@ -1,0 +1,43 @@
+/* HEADER-MAIN */
+.header-main {
+  background: rgb(255, 255, 255);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0px 0px 2px 0px;
+  font-size: 0;
+}
+
+.header-main__logo {
+  display: inline-block;
+  width: 250px;
+  margin: 0px 35px 0px 0px;
+
+  vertical-align: top;
+
+}
+.header-main__logo img {
+  max-width: 100%;
+}
+.header-main__btn {
+  border-radius: 8px;
+  background: rgb(255, 188, 87);
+  padding: 11px 20px;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  font-weight: 600;
+  vertical-align: top;
+  line-height: 126.315789%;
+}
+.header-main__btn img {
+  margin-right: 10px;
+}
+@media(max-width:464px) {
+  .header-main__logo{
+    margin: 0px 0px 20px 0px;
+    /* не втрималася :) */
+  }
+}
+
+
+
+/* HEADER-MAIN */

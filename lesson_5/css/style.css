@@ -1,0 +1,471 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+/* products */
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+/* products */
+/* Підключення шрифтів */
+
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+
+/* KROVATO */
+/* header */
+@import url("header_top/ht.css");
+@import url("header_main/hm.css");
+@import url("header_bottom/hb.css");
+/* header */
+/* block-1 */
+body {
+  font-family: "Proxima Nova", sans-serif;
+  color: rgb(43, 41, 41);
+  background: rgb(248, 248, 248);
+}
+
+.krovato {
+  font-size: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.krovato__nav {
+  margin-bottom: 40px;
+  padding-top: 5px;
+}
+
+.nav__item {
+    font-size: 16px;
+    color: rgb(83, 83, 83);
+    display: inline-block;
+    line-height: 187.5%; /* 30/16 */ 
+}
+.nav__item img {
+  vertical-align: middle;
+}
+.nav__text {
+  display: inline-block;
+}
+.nav__link {
+  font-size: 16px;
+  color: rgb(255, 188, 87);
+}
+
+.main-section__title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.main-section__image {
+  margin-bottom: 40px;
+}
+.main-section__image img{
+  max-width: 100%;
+}
+.main-section__text {
+  font-size: 16px;
+  line-height: 187.5%; /* 30/16 */
+  margin-bottom: 40px ;
+}
+[title$="параграф"] {
+  margin-bottom: 25px;
+}
+.main-section__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%; /* 28/20 */
+  margin-bottom: 30px;
+}
+.main-section__list {
+  margin-bottom: 40px;
+}
+.list li img{
+  max-width: 7%;
+}
+
+.list li {
+  margin-bottom: 20px;
+}
+.list__about {
+  font-size: 16px;
+  line-height: 187.5%; /* 30/16 */
+  max-width: 93%;
+  display: inline-block;
+  padding-left: 15px;
+}
+.main-section__parag {
+  font-size: 16px;
+  line-height: 187.5%; /* 30/16 */
+}
+/* block-1 */
+
+
+/* block-2 */
+
+.krovato__block-2 {
+  padding: 70px 0px;
+}
+.block-2__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%; /* 48/40 */
+  margin: 0px 0px 40px 0px;
+}
+.block-2__title span {
+  text-transform: uppercase;
+}
+.block-2__items {
+  margin: 0px -15px;
+  text-align: center;
+}
+.block-2__item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 15px;
+  /* width: 25%; */
+  width: 300px;
+  margin-bottom: 30px;
+}
+.block-2__subtitle {
+  font-size: 26px;
+  line-height: 76.470588%; /* 26/34 */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.block-2__text {
+  font-size: 16px;
+  line-height: 187.5%; /* 30/16 */
+}
+
+.block-2__media {
+  margin-bottom: 20px;
+}
+/* block-2 */
+
+/* KROVATO */
+
+
+/* PRODUCTS */
+
+.products {
+  padding: 100px 0px;
+  background-color: rgba(30, 40, 50, 0.05);
+  font-family: "Roboto",sans-serif;
+  text-align: center;
+  font-size: 0;
+
+}
+.products__container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.products__title {
+  font-size: 50px;
+  line-height: 118%; /* 59/50 */
+  margin-bottom: 60px;
+}
+.products__items {
+  margin: 0px -12px;
+}
+.products__item {
+  display: inline-block;
+  padding: 0px 12px;
+  margin-bottom: 24px;
+}
+.products__image {
+  width: 200px;
+}
+
+.products__image img {
+  max-width: 100%;
+}
+/* PRODUCTS */
+
+
+/* PRACTICE */
+
+.content {
+	padding: 70px 0 30px;
+}
+
+.general-block {
+	margin-bottom: 40px;
+	text-align: center;
+
+}
+
+.general-block__title-part {
+	margin-bottom: 15px;
+}
+.general-block__title {
+	padding: 10px 23%;
+	display: inline-block;
+	background-color: red;
+	margin-bottom: 15px;
+}
+.general-block__title h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.general-block__arows {
+	text-align: left;
+	font-size: 0;
+}
+.general-block__img {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+.general-block__blocks {
+	font-size: 0;
+}
+.general-block__block {
+	vertical-align: top;
+	display: inline-block;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.general-block__text {
+	font-size: 20px;
+	font-style: oblique;
+	background-color: blue;
+	line-height: 40px;
+	color: #fff;
+}
+.block_2 .general-block__text {
+	background-color: green;
+}
+
+
+
+.main-rules {
+	max-width: 66%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.main-rules__title {
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 1.8;
+	color: gold;
+}
+
+.main-rules__block {
+	margin-bottom: 7px;
+}
+
+.main-rules__block span {
+	font-size: 20px;
+	font-weight: 700;
+	padding-left: 10px;
+	font-style: oblique;
+}
+
+
+.main-rules__block img {
+	vertical-align: middle;
+}
+
+
+
+.definition {
+	margin-bottom: 50px;
+	font-size: 0;
+	margin: 0 -10px;
+	color: white;
+	margin-bottom: 45px;
+}
+
+.sideblock {
+	font-size: 16px;
+	display: inline-block;
+	width: 40%;
+	padding: 0 10px;
+}
+
+.sideblock__header {
+	/* width: 100%; */
+	min-height: 100px;
+	background-color: rgb(46, 153, 193);
+	margin-bottom: 20px;
+}
+
+.sideblock__title {
+	font-size: 30px;
+	padding: 32px 0 38px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+.sideblock__item {
+	height: 50px;
+	background-color: rgb(226, 51, 51);
+	margin-bottom: 10px;
+	padding: 5px;
+	overflow: scroll;
+}
+.sideblock__item span {
+	color: goldenrod;
+	font-size: 24px;
+}
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.mainblock {
+	vertical-align: top;
+	font-size: 16px;
+	display: inline-block;
+	width: 60%;
+	padding: 0 10px;
+	height: 230px;
+}
+
+.mainblock__content {
+	background-color: rgb(18, 140, 18);
+	height: 100%;
+	padding:  38px 25px 0 ;
+	overflow: auto;
+}
+
+.mainblock__title {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.mainblock__text {
+	font-size: 20px;
+}
+
+.margin .sideblock__header {
+	background-color: rgb(18, 140, 18);
+}
+
+.margin .sideblock__item {
+	background-color: rgb(46, 153, 193);
+}
+
+.margin .mainblock__content {
+	background-color: rgb(226, 51, 51);
+}
+
+
+
+.general-block__rows {
+	margin-bottom: 30px;
+}
+
+.examples__block {
+	display: inline-block;
+	width: 100%;
+	height: 300px;
+	background-color: #000;
+	padding: 7px;
+}
+
+.block_1 .examples__inside-block {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+}
+.block_1 .examples__inside-block div {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 255, 0.3);
+	padding: 30px;
+}
+.block_1 .examples__inside-block div div {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.block_2 .examples__inside-block {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	padding: 7px;
+}
+
+.block_2 .examples__block {
+	background-color: rgba(0, 128, 0, 0.3);
+	padding: 30px;
+}
+
+.examples__inside-block div {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.examples .general-block__text {
+	margin-bottom: 20px;
+}
+
+.general-block__row {
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.general-block__square {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #B2B2FF;
+}
+.general-block__row-text {
+	vertical-align: top;
+}
+
+
+.row_2 .general-block__square {
+	background-color: #000;
+}
+
+.row_2 {
+	margin-bottom: 0;
+}
+
+.block_2 .row_1 .general-block__square{
+	background-color: #BED9B9;
+}
+
+[alt*="внутрішній відступ"] {
+	margin-top: -20px;
+}
+
+[alt*="зовнішній відступ"] {
+	padding-top: 13px;
+	margin-bottom: -10px;
+}
+
+[src*="arrow-up"] {
+	margin-top: -30px;
+}
+
+/* PRACTICE */
+
+/* FOOTER */
+.footer {
+  padding: 20px 0px;
+  background: rgb(43, 41, 41);
+}
+.footer__copy {
+  text-align: center;
+  color: rgb(177, 177, 177);
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 15px;
+  line-height: 146.666667%; /* 22/15 */
+}
+/* FOOTER */

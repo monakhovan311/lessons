@@ -1,0 +1,51 @@
+/* HEADER-BOTTOM */
+.header-bottom {
+  background: rgb(255, 255, 255);
+  padding: 18px 0px;
+  font-size: 0;
+}
+.header-bottom__buy-list {
+  display: inline-block;
+  line-height: 1.26;
+  max-width: 39%;
+  vertical-align: top;
+}
+.buy-list li{
+  display: inline-block;
+  margin: 0px 40px 0px 0px;
+}
+
+.buy-list__link {
+  font-size: 19px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.buy-list__link div {
+  display: inline-block;
+}
+.header-bottom__menu {
+  display: inline-block;
+  max-width: 61%;
+  text-align: right;
+  vertical-align: top;
+}
+.menu {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.26;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 40px;
+  white-space: nowrap;
+}
+
+@media(max-width: 725px) {
+  .menu li {
+    margin-left: 10px;
+  }
+}
+
+
+/* HEADER-BOTTOM */
