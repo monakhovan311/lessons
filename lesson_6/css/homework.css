@@ -1,0 +1,247 @@
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap");
+@import url(fonts.css);
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+
+
+/* CORAL */
+.coral {
+  background: url(../img/homework/bg-2.svg) left 471px/ 132px no-repeat, url(../img/homework/bg-1.svg) right / 195px no-repeat,rgba(30, 40, 50, 0.05);
+  padding: 80px 0px 60px 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0;
+}
+
+.coral__container {
+  max-width: 1256px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.coral__shop {
+  display: inline-block;
+  width: 58%;
+  vertical-align: middle;
+}
+.coral__shop p {
+  font-size: 30px;
+  line-height: 183.333333%; /* 55/30 */
+  margin-bottom: 66px;
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+.coral__title {
+  font-size: 74px;
+  font-weight: 300;
+  line-height: 74.324324%; /* 55/74 */
+  margin-bottom: 50px;
+}
+.coral__btn {
+  display: inline-block;
+  background-color: rgb(30, 40, 50);
+  padding: 19px 26px 19px 26px;
+}
+
+.coral__btn span {
+  background: url(../icon/icon-btn-2.svg) top left/ 30px no-repeat;
+  font-size: 29px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding-left: 38px;
+  line-height: 117.241379%; /* 34/29 */
+  text-transform: capitalize;
+  min-height: 30px;
+}
+
+.coral__media {
+  display: inline-block;
+  width: 42%;
+  text-align: right;
+}
+.coral__image {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 424px;
+  border-radius: 35% 0 35% 0;
+/* перший варіант з box-shadow (не сурово по макету) */
+  /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25), -1px -1px 4px rgba(0, 0, 0, 0.25);
+   */
+
+/* другий варіант з використанням border */
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  
+/* третій варіант з використанням outline, як на мене, не підходить для вирішення данної задачі */
+  /* outline: 1px solid rgba(0, 0, 0, 0.25); */
+}
+
+.coral__image img {
+  border-radius: 35% 0 35% 0;
+  max-width: 100%;
+  margin: -20px 18px 20px -18px;
+}
+
+@media (max-width: 822px) {
+  .coral__media {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .coral {
+    text-align: center;
+  }
+
+  .coral__shop {
+    width: 100%;
+  }
+  .coral__title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+
+  .coral__shop p {
+    display: inline-block;
+    width: 70%;
+    font-size: 18px;
+    line-height: 188.888889%; /* 34/18 */
+    margin-bottom: 30px;
+  }
+
+  .coral__btn {
+    margin-bottom: 60px;
+  }
+}
+/* CORAL */
+
+
+/* EXPLORE */
+.explore {
+  font-family: "Quicksand", sans-serif;
+  background: url(../img/homework/number/alphapet.svg) center/contain repeat-y, url(../img/homework/holographic.svg)center/cover no-repeat, rgb(145, 76, 255);
+  color: rgb(255, 255, 255);
+}
+.explore__container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.explore__text-block {
+  max-width: 600px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.explore__text-block p {
+  font-size: 20px;
+  line-height: 160%;
+  margin-bottom: 24px; /* 32/20 */
+}
+.explore__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%; /* 48/40 */
+  margin-bottom: 24px;
+}
+.explore__btn {
+  padding: 12px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.explore__text {
+  color: #0d1216;
+  font-weight: 700;
+  line-height: 156.25%; /* 25/16 */
+}
+.explore__image {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 547px;
+  padding-left: 133px;
+}
+
+.explore__image img {
+  max-width: 100%;
+}
+
+@media(max-width:1181px) {
+  .explore {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .explore__image{
+    padding: 0;
+  }
+}
+/* EXPLORE */
+
+
+/* KROVATO*/
+
+.content__krovato {
+	padding: 40px 0;
+	font-family: "Proxima Nova",sans-serif;
+}
+.krovato__container {
+	max-width: 1100px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.krovato__title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 1.2;
+	color: #2b2929;
+  margin-bottom: 40px;
+}
+
+.krovato__text {
+	margin-bottom: 40px;
+}
+.krovato__text p {
+	margin-bottom: 15px;
+}
+.krovato__text p+p {
+	margin-bottom: 0;
+}
+
+.krovato__text, .krovato__list {
+	color: #2b2929;
+  line-height: 187.5%; /* 30/16 */
+}
+
+.krovato__image {
+  margin-bottom: 40px;
+}
+
+.krovato__image img{
+  max-width: 100%;
+}
+
+.krovato__subtitle {
+	color: #2b2929;
+  font-size: 20px;
+  line-height: calc(28/20);
+	margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.krovato__list {
+	margin-bottom: 40px;
+}
+.krovato__item {
+	margin-bottom: 20px;
+	background: url("../icon/mark.svg") 0 0/32px no-repeat;
+	padding-left: 47px;
+	min-height: 32px;
+}
+.krovato__item.last {
+	margin-bottom: 0;
+}
+/* KROVATO*/
