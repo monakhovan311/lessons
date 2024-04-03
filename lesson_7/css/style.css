@@ -406,9 +406,9 @@
   background-color: aquamarine;
 } */
 
-.planet__element:has(div) {
+/* .planet__element:has(div) {
   color: rgb(234, 226, 245);
-}
+} */
 
 .planet__section > *:last-child {
   margin-bottom: 0;
