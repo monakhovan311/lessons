@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Philosopher:regular,700&display=swap");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+
+.grafic {
+  background-color: #FFBC57;
+  padding-block: 80px;
+  color: #FFF;
+  font-family: "Philosopher";
+}
+
+.grafic__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.grafic__title {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.grafic__title::after {
+  content: "";
+  display: block;
+  max-width: 300px;
+  height: 3px;
+  background-color: #fff;
+  margin: 10px auto 0px;
+
+}
+
+.grafic__title span {
+  color: rgb(177, 157, 131);
+  
+}
+
+.grafic__body > * {
+  margin-bottom: 30px;
+}
+
+.grafic__body {
+  background-color: #efe2ce;
+  border-radius: 20px;
+  border: 2px solid;
+  padding: 20px 0px;
+  margin-bottom: 50px;
+}
+.grafic__item {
+  text-align: center; 
+}
+.grafic__icon {
+  background: url(../icon/question.svg) top left/ 100% no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.grafic__item p {
+  display: inline-block;
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 136.363636%; /* 30/22 */
+}
+
+.grafic__item p:hover {
+  background-color: #FFBC57;
+  border-radius: 10px;
+}
+.grafic__image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.grafic__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.grafic__media > * {
+  margin-bottom: 15px;
+}
+
+.grafic__media img {
+  max-width: 100%;
+}
+
+.grafic__media {
+  text-align: center;
+  padding-block: 30px;
+  background-color: #f9c880;
+  border-radius: 20px;
+}
+
+.grafic__media h2 {
+  font-size: 30px;
+}
+
+
+.grafic__buttons a{
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #FFBC57;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 1px 2px 1px rgb(128, 122, 122);
+  text-transform: uppercase;
+}
+
+.grafic__buttons a:active {
+  box-shadow: 1px 1px 0px rgb(128, 122, 122);
+}
+
+.grafic__buttons a:not(:last-child){
+  margin-right: 15px;
+}
+
+.grafic__media > *:last-child {
+  margin-bottom: 0px;
+}
