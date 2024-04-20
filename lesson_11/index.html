@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-11</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo/logo.svg" alt="Зображення логотипу">
+            </a>
+          </div>
+          <div class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#trans-2d" class="menu__link">2D Трансформації</a>
+              </li>
+              <li class="menu__item">
+                <a href="#trans-3d" class="menu__link">3D Трансформації</a>
+              </li>
+              <li class="menu__item">
+                <a href="#hov" class="menu__link">Hover</a>
+              </li>
+              <li class="menu__item">
+                <a href="#carfun" class="menu__link">Car</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <div class="transform">
+          <div class="transform__container">
+            <h1>Трансформації, властивість <br> <span>transform</span></h1>
+
+            <div id="trans-2d" class="transform__transform-2d transform-2d">
+              <h2 class="transform-2d__title title">
+                2D Трансформації
+              </h2>
+
+              <div class="transform-2d__practice practice">
+                <div class="practice__body">
+                  <div class="practice__item practice__item--translate-xy">
+                    <div class="practice__inside-item">translate(30px,-30px)</div>
+                  </div>
+                  <div class="practice__item practice__item--translate-x">
+                    <div class="practice__inside-item">translateX(30px)</div>
+                  </div>
+                  <div class="practice__item practice__item--translate-y">
+                    <div class="practice__inside-item">translateY(-90%)</div>
+                  </div>
+                  <div class="practice__item practice__item--scale-little">
+                    <div class="practice__inside-item">scale(0.5)</div>
+                  </div>
+                  <div class="practice__item practice__item--scale-big">
+                    <div class="practice__inside-item">scale(-1.2)</div>
+                  </div>
+                  <div class="practice__item practice__item--scale-mirror">
+                    <div class="practice__inside-item">scale(-1, 1); translateY(-100px)</div>
+                  </div>
+                  <div class="practice__item practice__item--rotate-circle">
+                    <div class="practice__inside-item">rotate(90deg)</div>
+                  </div>
+                  <div class="practice__item practice__item--rotate-y">
+                    <div class="practice__inside-item">rotateY(-180deg)</div>
+                  </div>
+                  <div class="practice__item practice__item--rotate-x">
+                    <div class="practice__inside-item">rotateX(1080deg)</div>
+                  </div>
+                  <div class="practice__item practice__item--skew-a">
+                    <div class="practice__inside-item">skew(20deg, 20deg)</div>
+                  </div>
+                  <div class="practice__item practice__item--skew-b">
+                    <div class="practice__inside-item">skew(-20deg)</div>
+                  </div>
+                  <div class="practice__item practice__item--skew-c">
+                    <div class="practice__inside-item">skewY(30deg)</div>
+                  </div>
+                  <div class="practice__item practice__item--skew-d">
+                    <div class="practice__inside-item">skewX(30deg)</div>
+                  </div>
+                  <div class="practice__item practice__item--multi">
+                    <div class="practice__inside-item">translate(20%, 20%) scale(0) rotate(360deg)</div>
+                  </div>
+                  <div class="practice__item practice__item--transform-origin">
+                    <div class="practice__inside-item">transform-origin: 0 0; rotate(45deg);</div>
+                  </div>
+                  <div class="practice__item practice__item--perspective">
+                    <div class="practice__inside-item">perspective(400px); perspective-origin: top left;</div>
+                  </div>
+                </div>
+              </div>
+
+            
+            </div>
+
+            <div id="trans-3d" class="transform__transform-3d transform-3d">
+              <h3 class="transform-3d__title title">
+                3D Трансформації
+              </h3>
+
+              <div class="transform-3d__practice practice">
+                <div class="practice__body">
+
+                  <div class="practice__item practice__item--translate3d">
+                    <div class="practice__inside-item">translate3d(-50px, 20px, 100px)</div>
+                  </div>
+                
+                  <div class="practice__item practice__item--scale3d">
+                    <div class="practice__inside-item">scale3d(1.1, 1.1, 1.1)</div>
+                  </div>
+                
+                  <div class="practice__item practice__item--rotate3d">
+                    <div class="practice__inside-item">rotate3d(15, 20, 30, 60deg)</div>
+                  </div>
+
+                  <div class="practice__item practice__item--multi3d">
+                    <div class="practice__inside-item">multi3D</div>
+                  </div>
+
+                  <div class="practice__item practice__item--preserve-3d">
+                    <div class="practice__inside-item">transform-style:preserve-3d</div>
+                  </div>   
+                </div>
+              </div>
+            </div>
+
+            <div id="hov" class="transform__hover hover">
+              <div class="hover__card card">
+                <img class="card__phone" src="img/phone.svg" alt="Зображення айфону">
+                <div class="card__body">
+                  <div class="card__item">
+                    <div class="card__front">
+                      <img src="img/front-side.svg" alt="Зображення передньої сторони картки">
+                    </div>
+                    <div class="card__back">
+                      <img src="img/back-side.svg" alt="Зображення задньої сторони картки">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hover__media">
+                <img src="img/hover-me.svg" alt="Текст і стрілочка">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="carfun" class="car">
+          <div class="car__sky">
+            <img class="car__cloud" src="img/cloud-1.svg" alt="Зображення хмарки">
+            <img class="car__cloud" src="img/cloud-2.svg" alt="Зображення хмарки">
+            <img class="car__cloud" src="img/cloud-3.svg" alt="Зображення хмарки">
+          </div>
+          <div class="car__container">         
+            <div class="car__item">
+              <div class="car__body">
+                <div class="car__window"></div>
+                <div class="car__seats"></div>
+                <img class="car__person" src="img/girl.svg" alt="Зображення дівчини">
+                <img class="car__angry-girl" src="img/girl-2.svg" alt="Зображення дівчини">
+                <div class="car__headlight car__headlight--left">
+                  <div class="car__inside-headlight">
+                    <div class="car__more-inside">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="car__headlight car__headlight--right">
+                  <div class="car__inside-headlight">
+                    <div class="car__more-inside">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="car__wheel car__wheel--left">
+                  <div class="car__inside-wheel">
+                    <div class="car__item-inside">
+                      <div class="car__last-item">
+                        <div class="car__decor car__decor--circle car__decor--right-circ"></div>
+                        <div class="car__decor car__decor--circle car__decor--left-circ"></div>
+                        <div class="car__decor car__decor--circle car__decor--botr-circ"></div>
+                        <div class="car__decor car__decor--circle car__decor--botl-circ"></div>
+                        <div class="car__decor car__decor--rect car__decor--first"></div>
+                        <div class="car__decor car__decor--rect car__decor--second"></div>
+                        <div class="car__decor car__decor--rect car__decor--third"></div>
+                        <div class="car__decor car__decor--rect car__decor--fourth"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="car__wheel car__wheel--right">
+                  <div class="car__inside-wheel">
+                    <div class="car__item-inside">
+                      <div class="car__last-item">
+                        <div class="car__decor car__decor--circle car__decor--right-circ"></div>
+                        <div class="car__decor car__decor--circle car__decor--left-circ"></div>
+                        <div class="car__decor car__decor--circle car__decor--botr-circ"></div>
+                        <div class="car__decor car__decor--circle car__decor--botl-circ"></div>
+                        <div class="car__decor car__decor--rect car__decor--first"></div>
+                        <div class="car__decor car__decor--rect car__decor--second"></div>
+                        <div class="car__decor car__decor--rect car__decor--third"></div>
+                        <div class="car__decor car__decor--rect car__decor--fourth"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="car__part car__part--front"></div>
+                <div class="car__part car__part--back"></div>
+              </div>
+            </div>
+          </div>
+          <div class="car__nature">
+            <img src="img/tree-1.svg" alt="Зображення дерева">
+            <img src="img/tree-2.svg" alt="Зображення дерева">
+            <img src="img/tree-3.svg" alt="Зображення дерева">
+            <img src="img/tree-4.svg" alt="Зображення дерева">
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+
+</html>
