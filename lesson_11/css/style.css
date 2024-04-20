@@ -389,11 +389,11 @@ h1 span {
   transform: rotateY(-180deg);
 }
 
-.hover {
+.hover__media {
   display: inline-block;
   max-width: 500px;
 }
-.hover img {
+.hover__media img {
   max-width: 100%;
 }
 /* HOVER */
