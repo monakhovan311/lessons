@@ -521,9 +521,18 @@ body {
   transform: translate(-50%, 0px);
 }
 
+.delivery__item input:focus-visible + .delivery__label {
+  outline: 2px solid rgb(244, 244, 36);
+  outline-offset: 5px;
+}
+
 .delivery__item input:checked + .delivery__label img {
   opacity: 0;
 }
+
+/* .delivery__item input:focus-visible + .delivery__label {
+  border-color: #FFBC57;
+} */
 
 .delivery__price {
   color: #535353;
@@ -537,7 +546,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .nav-block__hours {
   line-height: 187.5%; /* 30/16 */
@@ -550,6 +559,11 @@ body {
 
 .nav-block__about {
   flex: 1 1 auto;
+}
+
+.btn--second {
+  flex-basis: 142px;
+  flex-shrink: 0;
 }
 
 .btn--second::before {
@@ -622,6 +636,10 @@ body {
 
 .method-pay__choise input:checked + .method-pay__text::before {
   border-color: rgba(255, 188, 87, 1);
+}
+.method-pay__choise input:focus-visible + .method-pay__text {
+  outline: 2px solid rgba(255, 188, 87, 1);
+  outline-offset: 5px;
 }
 
 .method-pay__choise img {
