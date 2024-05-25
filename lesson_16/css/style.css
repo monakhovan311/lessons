@@ -91,14 +91,19 @@ body {
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s;
+  overflow: hidden;
 }
-.social-top-header__link--whatsapp {
+.social-top-header__link img {
+  width: 17px;
+  object-fit: cover;
+}
+.social-top-header__link--green {
   background-color: rgba(117, 183, 59, 1);
 }
-.social-top-header__link--telegram {
+.social-top-header__link--blue {
   background-color: rgba(64, 179, 224, 1);
 }
-.social-top-header__link--viber {
+.social-top-header__link--violet {
   background-color: rgba(111, 63, 170, 1);
 }
 .top-header__lang {
@@ -280,6 +285,15 @@ body {
   position: relative;
   z-index: 2;
   transition: transform 0.3s;
+  overflow: hidden;
+}
+.contacts-body-header__icon:hover + .contacts-body-header__body {
+  
+}
+
+.contacts-body-header__icon img{
+  width: 23px;
+  object-fit: cover;
 }
 
 .contacts-body-header__label {
@@ -351,7 +365,7 @@ body {
   flex-shrink: 0;
 }
 @media(any-hover: hover) {
-  .contacts-body-header:hover .phones-body-header__items{
+  .contacts-body-header__icon:hover + .contacts-body-header__body .phones-body-header__items {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
@@ -386,6 +400,11 @@ body {
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s;
+  overflow: hidden;
+}
+.actions-body-header__link img {
+  width: 25px;
+  object-fit: cover;
 }
 @media(any-hover: hover) {
   .actions-body-header__link:hover {
@@ -393,6 +412,9 @@ body {
   }
 }
 .menu-icon {
+  display: none;
+}
+.body-header__block-list{ 
   display: none;
 }
 
@@ -439,6 +461,7 @@ body {
 
 .category-bottom-header__menu {
   display: flex;
+  justify-content: end;
   column-gap: 40px;
   row-gap: 10px;
   flex-wrap: wrap;
@@ -485,11 +508,9 @@ body {
   background-color: #fff;
   position: relative;
   flex-basis: 250px;
-  flex-grow: 1;
   flex-shrink: 1;
   overflow: hidden;
   min-width: 210px;
-  max-width: 300px;
 }
 .category__item::before {
   content: "";
@@ -520,24 +541,26 @@ body {
   max-width: 150px;
 }
 .category__picture {
-  position: relative;
-  padding-bottom: 120%;
   transform: scale(1);
   transition: transform 0.3s ease 0s;
 }
 
 .category__picture img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  aspect-ratio: 250 / 300;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .category__arrow {
   position: absolute;
+  width: 50px;
   bottom: -100%;
   right: 20px;
   transition: bottom 0.3s ease 0s;
+}
+.category__arrow img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .category__item:hover .category__arrow {
@@ -678,6 +701,7 @@ body {
   }
 
   .body-header__block-list {
+    display: block;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
