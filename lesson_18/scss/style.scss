@@ -822,26 +822,22 @@ body {
   // .works__text-block
 
   &__text-block {
-  }
-
-  // .works__best-edits
-
-  &__best-edits {
-  }
-
-  & .block-text {
     display: flex;
     align-items: flex-start;
     &__title {
-      align-items: flex-start;
       &::after {
         @media(max-width:767.98px) {
           width: 112%;
         }
       }
     }
-  // .block-text__title
   }
+
+  // .works__best-edits
+
+  &__best-edits {
+  }
+  // .block-text__title
 }
 .best-edits {
   // .best-edits__wrapper
