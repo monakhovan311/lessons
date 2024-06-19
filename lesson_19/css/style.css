@@ -2405,9 +2405,9 @@ body.lock {
   }
 }
 .best-sellers .media__item {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  max-width: 312px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 312px;
+          flex: 1 0 312px;
 }
 
 .products {
