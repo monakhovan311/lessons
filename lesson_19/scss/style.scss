@@ -1296,8 +1296,7 @@ body {
       }
     }
     &__item {
-      flex-shrink: 0;
-      max-width: 312px;
+      flex: 1 0 312px;
     }
   }
 }
