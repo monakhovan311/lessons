@@ -164,9 +164,10 @@ body.lock {
           column-gap: 0.4375rem;
 }
 .header__img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 2.375rem;
-          flex: 0 0 2.375rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 2.375rem;
+  height: 2.3125rem;
 }
 .header__img img {
   width: 100%;
@@ -175,9 +176,10 @@ body.lock {
      object-fit: contain;
 }
 .header__text-picture {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 3.6875rem;
-          flex: 0 0 3.6875rem;
+  width: 3.6875rem;
+  height: 1.25rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media (max-width: 26.875em) {
   .header__text-picture {
