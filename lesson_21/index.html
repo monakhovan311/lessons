@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-21</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <base target="_blank"> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <article class="homework">
+          <div class="homework__container">
+            <div class="homework__tasks tasks">
+              <section class="tasks__block">
+                <h2 class="tasks__title"><span>Задача №1</span> Яка назва змінної вірна?</h2>
+                <ol class="tasks__options">
+                  <li class="tasks__item">
+                    let user-name
+                  </li>
+                  <li class="tasks__item">
+                    let UserName
+                  </li>
+                  <li class="tasks__item">
+                    let userName
+                  </li>
+                </ol>
+                <details class="tasks__answer">
+                  <summary>Відповідь</summary>
+                  <span>
+                    Варіант 3 - це є правильна відповідь. У JS для написання змінних використовується стиль lowerCamelCase.
+                  </span>
+                </details>
+              </section>
+
+              <section class="tasks__block">
+                <h2 class="tasks__title"><span>Задача №2</span> Чи буде помилка при виконанні наступної програми?</h2>
+                <ol class="tasks__options">
+                  <li class="tasks__item">
+                    const userName = 20
+                  </li>
+                  <li class="tasks__item">
+                    userName = "Іштван"
+                  </li>
+                </ol>
+                <details class="tasks__answer">
+                  <summary>Відповідь</summary>
+                  <span>
+                    Так, данний варіант є помилкою, бо значення константи неможливо змінити. 
+                  </span>
+                </details>
+              </section>
+
+              <section class="tasks__block">
+                <h3 class="tasks__title"><span>Задача №3</span> Що потрапить в консоль?</h3>
+                <ol class="tasks__options">
+                  <li class="tasks__item">
+                    let numOne = 20
+                  </li>
+                  <li class="tasks__item">
+                    let numTwo = "20"
+                  </li>
+                  <li class="tasks__item">
+                    let numSumm = numOne + numTwo
+                  </li>
+                  <li class="tasks__item">
+                    console.log(numSumm)
+                  </li>
+                </ol>
+                <details class="tasks__answer">
+                  <summary>Відповідь</summary>
+                  <span>
+                    В консоль потрапить рядок "2020", оскільки бінарний оператор плюс(+) не змінює тип данних.
+                  </span>
+                </details>
+              </section>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+
+
+
+<!-- 
+    Задача №1
+Яка назва змінної вірна
+1) let user-name
+2) let UserName
+3) let userName
+
+
+Задача №2
+Чи буде помилка при виконанні наступної програми
+const userName = 20
+userName = "Іштван"
+
+
+Задача №3
+Що потрапить в консоль?
+let numOne = 20
+let numTwo = "20"
+
+let numSumm = numOne + numTwo
+console.log(numSumm) -->
+
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
