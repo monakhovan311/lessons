@@ -1,0 +1,100 @@
+@use "sass:math";
+
+// Підключення шрифтів з Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+// Локальне підключення шрифтів
+// @import "_fonts.scss";
+// Скидання стилів
+@import "_reset.scss";
+// Міксіни
+@import "_mixins.scss";
+// Окремі сторінки
+
+// **додавання затримки анімації до елементів за допомогою циклу**
+// @for $i from 1 through 6 {
+//   &:nth-child(#{$i}) {
+//      $delay: ($i - 1) * 0.2;
+//      animation-delay: #{$delay}s;
+//   }
+// }
+
+// функція SCSS для переводу пікселів у відсотки %
+//Percent
+// @function percent($px, $from: 100) {
+// 	$result: math.div($px, $from) * 100%;
+// 	@return $result;
+// }
+
+
+// Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1350;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ==========================================================
+
+
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+  & > main {
+    flex-grow: 1;
+  }
+}
+
+/* ------------------------- */
+[class*="__container"] {
+	max-width: toRem(1270);
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+	margin: 0 auto;
+}
+
+// стилі для відображення прикладу у верстці
+.page {
+  background-color: rgb(164, 239, 195);
+	padding-block: toRem(100);
+  padding-inline: toRem(50);
+  text-align: center;
+}
+.page span {
+  font-weight: 700;
+	@include adaptiveValue("font-size", 64, 24);
+	letter-spacing: toRem(5);
+	color: #fff;
+	animation: text 5s ease infinite;
+	display: inline-block;
+  line-height: 180%;
+  &:nth-child(odd) {
+    color: rgb(234, 239, 136);
+  }
+}
+
+@keyframes text {
+	0% {
+		opacity: 0;
+		transform: translate(0px, 20%) rotate(10deg);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0) rotate(0deg);
+	}
+}
