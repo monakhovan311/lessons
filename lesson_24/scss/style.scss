@@ -1,0 +1,314 @@
+@use "sass:math";
+
+// Підключення шрифтів з Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+// Локальне підключення шрифтів
+// @import "_fonts.scss";
+// Скидання стилів
+@import "_reset.scss";
+// Міксіни
+@import "_mixins.scss";
+// Окремі сторінки
+
+// **додавання затримки анімації до елементів за допомогою циклу**
+// @for $i from 1 through 6 {
+//   &:nth-child(#{$i}) {
+//      $delay: ($i - 1) * 0.2;
+//      animation-delay: #{$delay}s;
+//   }
+// }
+
+// функція SCSS для переводу пікселів у відсотки %
+//Percent
+// @function percent($px, $from: 100) {
+// 	$result: math.div($px, $from) * 100%;
+// 	@return $result;
+// }
+
+
+// Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1350;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ==========================================================
+
+
+
+body {
+  font-family: "Quicksand", sans-serif;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .6s, visibility 0.6s;
+	&.loaded {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+  & > main {
+    flex-grow: 1;
+  }
+}
+
+/* ------------------------- */
+[class*="__container"] {
+	max-width: toRem(1270);
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #75f189;
+	position: fixed;
+	width: 100%;
+	padding-block: toRem(10);
+	z-index: 50;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: toRem(30);
+	}
+	// .header__logo
+
+	&__logo {
+		width: toRem(50);
+		height: toRem(50);
+		background-color: #eaf2b4;
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
+
+	// .header__list
+
+	&__list {
+		display: flex;
+		gap: toRem(20);
+		flex-wrap: wrap;
+	}
+
+	// .header__item
+
+	&__item {
+		width: toRem(150);
+		height: toRem(20);
+		background-color: #b6f1f0;
+		border-radius: toRem(20);
+	}
+}
+
+
+// стилі для відображення прикладу у верстці
+.page {
+  background-color: rgb(196, 236, 213);
+	padding-top: toRem(170);
+	padding-bottom: toRem(80);
+	text-align: center;
+	& > * {
+		margin-bottom: toRem(50);
+	}
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1 {
+	font-size: toRem(40);
+	color: #fff;
+	letter-spacing: toRem(3);
+	font-weight: 700;
+	text-transform: uppercase;
+	span {
+		color: #eaf2b4;
+	}
+	&:not(:last-child) {
+		margin-bottom: toRem(40);
+	}
+}
+
+.exercise-one {
+	// .exercise-one__title
+
+	&__title {
+		font-size: toRem(30);
+		color: #6bf4f2;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: toRem(5);
+		&:not(:last-child) {
+			margin-bottom: toRem(30);
+		}
+	}
+
+}
+
+.title {
+	font-size: toRem(30);
+		color: #6bf4f2;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: toRem(5);
+		&:not(:last-child) {
+			margin-bottom: toRem(20);
+		}
+}
+
+
+.items {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: toRem(10);
+	&__item {
+		width: toRem(200);
+		height: toRem(200);
+		flex-shrink: 0;
+		background-color: #eaf2b4;
+		border-radius: 50%;
+		transition: all 0.5s;
+		overflow: hidden;
+		border: 5px solid rgb(158, 242, 177);
+		&.active {
+			border-radius: 10%;
+			background-color: #6bf4f2;
+			border-color: #eaf2b4;
+		}
+	}
+}
+
+
+.exercise-four {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(15);
+	}
+	// .exercise-four__text
+
+	&__text {
+		color: #fff;
+		line-height: 1.3;
+		font-size: toRem(24);
+	}
+
+	// .exercise-four__item
+	&__block-items {
+		display: flex;
+		justify-content: center;
+		&.animate {
+			.exercise-four__item {
+				transform: translate(0);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	&__item {
+		background-color: #75f189;
+		border: toRem(7) solid rgb(188, 193, 188);
+		width: toRem(200);
+		height: toRem(200);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: toRem(50);
+		color: #fff;
+		transition: all 3s;
+		transform: translate(-100%);
+		opacity: 0;
+		visibility: hidden;
+		&.rainbow {
+			animation: rainbow-theme 7s linear 0s infinite normal;
+		}
+		@keyframes rainbow-theme {
+			0% {
+				background-color: #75f189;
+			}
+			25% {
+				background-color: #75e2f1;
+			}
+			50% {
+				background-color: #f175c8;
+
+			}
+			75% {
+				background-color: #eff175;
+
+			}
+			100% {
+				background-color: #f17b75;
+			}
+		}
+	}
+}
+
+
+
+
+.footer {
+	background-color: #6bf4f2;
+	padding-block: toRem(30);
+	// .footer__container
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: toRem(15);
+	}
+
+	&__heart {
+		flex: 0 0 toRem(55);
+		transform: translate(-100%);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 5s;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		&.show {
+			transform: translate(0);
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	// .footer__thanks
+
+	&__thanks {
+		text-align: center;
+		font-size: clamp(1.125rem, 0.625rem + 2.5vw, 2.5rem);
+		text-transform: uppercase;
+		color: rgb(174, 173, 236);
+		font-weight: 700;
+		letter-spacing: toRem(3);
+	}
+}
+
+
+
+
